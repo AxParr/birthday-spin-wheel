@@ -1,4 +1,4 @@
-import {Wheel} from '../../../dist/spin-wheel-esm.js';
+import { Wheel } from '../../../dist/spin-wheel-esm.js';
 
 window.onload = () => {
 
@@ -7,28 +7,28 @@ window.onload = () => {
   const props1 = {
     items: [
       {
-        label: 'zero',
+        label: 'Dinner & Movie',
       },
       {
-        label: 'one',
+        label: 'Coffee Date',
       },
       {
-        label: 'two',
+        label: 'Walk in the Park',
       },
       {
-        label: 'three',
-      },
-        {
-        label: 'four',
+        label: 'Museum Visit',
       },
       {
-        label: 'five',
+        label: 'Cooking Together',
       },
       {
-        label: 'six',
+        label: 'Game Night',
       },
       {
-        label: 'seven',
+        label: 'Concert',
+      },
+      {
+        label: 'Beach Day',
       },
     ],
     itemLabelFontSizeMax: 40,
@@ -44,19 +44,19 @@ window.onload = () => {
   const props2 = {
     items: [
       {
-        label: '0',
+        label: 'Wine Tasting',
       },
       {
-        label: '1',
+        label: 'Escape Room',
       },
       {
-        label: '2',
+        label: 'Dancing',
       },
       {
-        label: '3',
+        label: 'Hiking',
       },
       {
-        label: '4',
+        label: 'Bowling',
       },
     ],
     itemLabelFontSizeMax: 40,
@@ -76,7 +76,7 @@ window.onload = () => {
 
     // Listen for click event on spin button:
     if (e.target === btnSpin) {
-      const {duration, winningItemRotaion} = calcSpinToValues();
+      const { duration, winningItemRotaion } = calcSpinToValues();
       wheel1.spinTo(winningItemRotaion, duration);
       wheel2.spinTo(winningItemRotaion + WHEEL_2_INITIAL_ROTATION, duration);
     }
@@ -87,7 +87,7 @@ window.onload = () => {
     const duration = 2600;
     const winningItemRotaion = getRandomInt(360, 360 * 1.75) + modifier;
     modifier += 360 * 1.75;
-    return {duration, winningItemRotaion};
+    return { duration, winningItemRotaion };
   }
 
   function getRandomInt(min, max) {

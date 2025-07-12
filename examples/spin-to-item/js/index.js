@@ -1,4 +1,4 @@
-import {Wheel} from '../../../dist/spin-wheel-esm.js';
+import { Wheel } from '../../../dist/spin-wheel-esm.js';
 import * as easing from '../../../scripts/easing.js';
 
 window.onload = () => {
@@ -15,35 +15,35 @@ window.onload = () => {
     debug: true, // So we can see pointer angle.
     items: [
       {
-        label: 'Dog',
+        label: 'Dinner & Movie',
         weight: 6,
       },
       {
-        label: 'Cat',
+        label: 'Coffee Date',
         weight: 4.9,
       },
       {
-        label: 'Fish',
+        label: 'Walk in the Park',
         weight: 4.1,
       },
       {
-        label: 'Rabbit',
+        label: 'Museum Visit',
         weight: 3.7,
       },
       {
-        label: 'Bird',
+        label: 'Cooking Together',
         weight: 3,
       },
       {
-        label: 'Chicken',
+        label: 'Game Night',
         weight: 2.8,
       },
       {
-        label: 'Lizard',
+        label: 'Concert',
         weight: 2.5,
       },
       {
-        label: 'Turtle',
+        label: 'Beach Day',
         weight: 1,
       },
     ],

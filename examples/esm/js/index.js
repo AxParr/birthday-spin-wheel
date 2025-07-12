@@ -1,17 +1,44 @@
-import {Wheel} from '../../../dist/spin-wheel-esm.js';
+import { Wheel } from '../../../dist/spin-wheel-esm.js';
 
 window.onload = () => {
 
   const props = {
     items: [
       {
-        label: 'one',
+        label: 'Dinner & Movie',
       },
       {
-        label: 'two',
+        label: 'Coffee Date',
       },
       {
-        label: 'three',
+        label: 'Walk in the Park',
+      },
+      {
+        label: 'Museum Visit',
+      },
+      {
+        label: 'Cooking Together',
+      },
+      {
+        label: 'Game Night',
+      },
+      {
+        label: 'Concert',
+      },
+      {
+        label: 'Beach Day',
+      },
+      {
+        label: 'Wine Tasting',
+      },
+      {
+        label: 'Escape Room',
+      },
+      {
+        label: 'Dancing',
+      },
+      {
+        label: 'Hiking',
       },
     ],
   };

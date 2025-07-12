@@ -11,14 +11,37 @@
   const wheelContainer = ref(null);
   let wheel = null;
 
+  const dateIdeas = [
+    'Dinner & Movie',
+    'Coffee Date',
+    'Walk in the Park',
+    'Museum Visit',
+    'Cooking Together',
+    'Game Night',
+    'Concert',
+    'Beach Day',
+    'Wine Tasting',
+    'Escape Room',
+    'Dancing',
+    'Hiking',
+    'Bowling',
+    'Karaoke',
+    'Art Class',
+    'Spa Day',
+    'Mini Golf',
+    'Arcade',
+    'Bookstore Date',
+    'Farmers Market',
+  ];
+
   const wheelProps = {
     items: [],
     itemLabelRadiusMax: 0.4,
   };
 
-  for (let i = 0; i < props.numItems; i++) {
+  for (let i = 0; i < props.numItems && i < dateIdeas.length; i++) {
     wheelProps.items.push({
-      label: 'item ' + i,
+      label: dateIdeas[i],
     });
   }
 
@@ -27,10 +50,12 @@
   })
 
   onUpdated(() => {
-    wheelProps.items.push({
-      label: 'item ' + props.numItems,
-    });
-    wheel.items = wheelProps.items;
+    if (props.numItems < dateIdeas.length) {
+      wheelProps.items.push({
+        label: dateIdeas[props.numItems],
+      });
+      wheel.items = wheelProps.items;
+    }
   })
 </script>
 

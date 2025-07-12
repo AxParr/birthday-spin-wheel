@@ -1,6 +1,73 @@
-import {AlignText} from '../../../src/constants.js';
+import { AlignText } from '../../../src/constants.js';
 
 export const props = [
+
+  {
+    name: 'Date Ideas',
+    radius: 0.88,
+    itemLabelRadius: 0.92,
+    itemLabelRadiusMax: 0.4,
+    itemLabelRotation: 0,
+    itemLabelAlign: AlignText.right,
+    itemLabelBaselineOffset: -0.13,
+    itemLabelFont: 'Pragati Narrow',
+    itemBackgroundColors: ['#ff6b9d', '#ffd93d', '#6bcf7f', '#4d9de0', '#e15759', '#ffc154', '#59a14f', '#edc949', '#af7aa1', '#ff9daa', '#9c755f', '#bab0ac'],
+    itemLabelColors: ['#fff', '#000'],
+    rotationSpeedMax: 700,
+    rotationResistance: -70,
+    lineWidth: 0,
+    overlayImage: './img/example-2-overlay.svg',
+    items: [
+      {
+        label: 'Dinner & Movie',
+      },
+      {
+        label: 'Coffee Date',
+      },
+      {
+        label: 'Walk in the Park',
+      },
+      {
+        label: 'Museum Visit',
+      },
+      {
+        label: 'Cooking Together',
+      },
+      {
+        label: 'Game Night',
+      },
+      {
+        label: 'Concert',
+      },
+      {
+        label: 'Beach Day',
+      },
+      {
+        label: 'Wine Tasting',
+      },
+      {
+        label: 'Escape Room',
+      },
+      {
+        label: 'Dancing',
+      },
+      {
+        label: 'Hiking',
+      },
+      {
+        label: 'Bowling',
+      },
+      {
+        label: 'Karaoke',
+      },
+      {
+        label: 'Art Class',
+      },
+      {
+        label: 'Spa Day',
+      },
+    ],
+  },
 
   {
     name: 'Workout',
@@ -13,7 +80,7 @@ export const props = [
     itemLabelBaselineOffset: -0.07,
     itemLabelFont: 'Amatic SC',
     itemLabelFontSizeMax: 55,
-    itemBackgroundColors: ['#ffc93c', '#66bfbf', '#a2d5f2', '#515070', '#43658b', '#ed6663', '#d54062' ],
+    itemBackgroundColors: ['#ffc93c', '#66bfbf', '#a2d5f2', '#515070', '#43658b', '#ed6663', '#d54062'],
     rotationSpeedMax: 500,
     rotationResistance: -100,
     lineWidth: 1,
