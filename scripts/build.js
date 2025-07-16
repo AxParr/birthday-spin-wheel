@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import esbuild from 'esbuild';
-import {readFile} from 'fs/promises';
+import { readFile } from 'fs/promises';
 import * as util from './util.js';
 import * as browsersync from 'browser-sync';
 
-function startWebServer (startPath) {
+function startWebServer(startPath) {
 
   browsersync.create();
 
@@ -13,9 +13,12 @@ function startWebServer (startPath) {
     startPath: startPath,
     watch: true,
     notify: false,
+    host: '0.0.0.0',
+    port: 3000,
+    open: false,
     ignore: [
       './src/*.*', // esbuild is monitoring this folder.
-      ],
+    ],
   });
 
 }
@@ -35,7 +38,7 @@ const preamble = [
   `/**\n`,
   ` * ${p.name} (${format.toUpperCase()}) v${p.version}\n`,
   ` * ${p.homepage}\n`,
-  ` * Copyright (c) ${p.author} ${util.dateFormat (new Date (), '%Y')}.\n`,
+  ` * Copyright (c) ${p.author} ${util.dateFormat(new Date(), '%Y')}.\n`,
   ` * Distributed under the ${p.license} license.\n`,
   ` */`,
 ];
@@ -50,7 +53,7 @@ try {
     format: format,
     globalName: 'spinWheel', // This setting is only for IIFE format.
     watch: shouldStartWebServer,
-    banner: {'js': preamble.join('')},
+    banner: { 'js': preamble.join('') },
   })
 } catch (error) {
   console.error(error);

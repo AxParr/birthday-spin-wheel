@@ -29,6 +29,8 @@
   },
   "scripts": {
     "start": "node scripts/build.js -entryPoint=src/wheel.js -servePath=examples/playground/",
+    "serve": "node scripts/serve.js",
+    "serve-network": "HOST=0.0.0.0 PORT=3004 node scripts/serve.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "lint": "eslint src examples scripts tests --fix",
     "build": "npm run lint && npm run test && npm run build-esm && npm run build-iife",

@@ -5,40 +5,16 @@ window.onload = () => {
   const props = {
     items: [
       {
-        label: 'Dinner & Movie',
+        label: 'pottery workshop',
       },
       {
-        label: 'Coffee Date',
+        label: 'jewelry workshop',
       },
       {
-        label: 'Walk in the Park',
+        label: 'cooking workshop',
       },
       {
-        label: 'Museum Visit',
-      },
-      {
-        label: 'Cooking Together',
-      },
-      {
-        label: 'Game Night',
-      },
-      {
-        label: 'Concert',
-      },
-      {
-        label: 'Beach Day',
-      },
-      {
-        label: 'Wine Tasting',
-      },
-      {
-        label: 'Escape Room',
-      },
-      {
-        label: 'Dancing',
-      },
-      {
-        label: 'Hiking',
+        label: 'your choice',
       },
     ],
   };

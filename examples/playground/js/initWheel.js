@@ -3,40 +3,16 @@ import { Wheel } from '../../../dist/spin-wheel-esm.js';
 const props = {
   items: [
     {
-      label: 'Dinner & Movie',
+      label: 'pottery workshop',
     },
     {
-      label: 'Coffee Date',
+      label: 'jewelry workshop',
     },
     {
-      label: 'Walk in the Park',
+      label: 'cooking workshop',
     },
     {
-      label: 'Museum Visit',
-    },
-    {
-      label: 'Cooking Together',
-    },
-    {
-      label: 'Game Night',
-    },
-    {
-      label: 'Concert',
-    },
-    {
-      label: 'Beach Day',
-    },
-    {
-      label: 'Wine Tasting',
-    },
-    {
-      label: 'Escape Room',
-    },
-    {
-      label: 'Dancing',
-    },
-    {
-      label: 'Hiking',
+      label: 'your choice',
     },
   ],
   itemBackgroundColors: [
@@ -44,14 +20,6 @@ const props = {
     '#74c69d',
     '#52b788',
     '#76c893',
-    '#40916c',
-    '#b7e4c7',
-    '#74c69d',
-    '#52b788',
-    '#76c893',
-    '#40916c',
-    '#b7e4c7',
-    '#74c69d',
   ],
   itemLabelFontSizeMax: 40,
   itemLabelColors: ['#1b4332'],

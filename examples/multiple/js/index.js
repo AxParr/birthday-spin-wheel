@@ -7,28 +7,16 @@ window.onload = () => {
   const props1 = {
     items: [
       {
-        label: 'Dinner & Movie',
+        label: 'pottery workshop',
       },
       {
-        label: 'Coffee Date',
+        label: 'jewelry workshop',
       },
       {
-        label: 'Walk in the Park',
+        label: 'cooking workshop',
       },
       {
-        label: 'Museum Visit',
-      },
-      {
-        label: 'Cooking Together',
-      },
-      {
-        label: 'Game Night',
-      },
-      {
-        label: 'Concert',
-      },
-      {
-        label: 'Beach Day',
+        label: 'your choice',
       },
     ],
     itemLabelFontSizeMax: 40,
@@ -44,19 +32,16 @@ window.onload = () => {
   const props2 = {
     items: [
       {
-        label: 'Wine Tasting',
+        label: 'pottery workshop',
       },
       {
-        label: 'Escape Room',
+        label: 'jewelry workshop',
       },
       {
-        label: 'Dancing',
+        label: 'cooking workshop',
       },
       {
-        label: 'Hiking',
-      },
-      {
-        label: 'Bowling',
+        label: 'your choice',
       },
     ],
     itemLabelFontSizeMax: 40,

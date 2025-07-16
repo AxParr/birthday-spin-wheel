@@ -15,36 +15,16 @@ window.onload = () => {
     debug: true, // So we can see pointer angle.
     items: [
       {
-        label: 'Dinner & Movie',
-        weight: 6,
+        label: 'pottery workshop',
       },
       {
-        label: 'Coffee Date',
-        weight: 4.9,
+        label: 'jewelry workshop',
       },
       {
-        label: 'Walk in the Park',
-        weight: 4.1,
+        label: 'cooking workshop',
       },
       {
-        label: 'Museum Visit',
-        weight: 3.7,
-      },
-      {
-        label: 'Cooking Together',
-        weight: 3,
-      },
-      {
-        label: 'Game Night',
-        weight: 2.8,
-      },
-      {
-        label: 'Concert',
-        weight: 2.5,
-      },
-      {
-        label: 'Beach Day',
-        weight: 1,
+        label: 'your choice',
       },
     ],
     itemLabelRadiusMax: 0.5,
