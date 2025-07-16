@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Spin Wheel Example - Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="./js/index.js" type="module"></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      min-height: 100vh;
+      background: #ff8fab;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100vw;
+    }
+
+    .frame-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .birthday-title {
+      font-family: 'Pacifico', cursive;
+      color: #ffe066;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px #fffbe6, 0 2px 0 #e1c340;
+      user-select: none;
+    }
+
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 24px solid transparent;
+      border-right: 24px solid transparent;
+      border-top: 32px solid #e15759;
+      margin: 0 auto 2px auto;
+      position: relative;
+      z-index: 10;
+    }
+
+    .wheel-wrapper {
+      width: 480px;
+      height: 480px;
+      max-width: 90vw;
+      max-height: 70vh;
+      margin: 0 auto;
+      position: relative;
+      background: none;
+      visibility: visible;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="frame-center">
+    <div class="birthday-title">Happy Birthday!</div>
+    <div class="arrow"></div>
+    <div class="wheel-wrapper"></div>
+  </section>
+</body>
+
+</html>
